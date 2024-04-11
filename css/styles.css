@@ -4231,9 +4231,9 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
+  /*--bs-navbar-brand-font-size: 1.25rem;*/
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  /*--bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);*/
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -4274,14 +4274,14 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 
-.navbar-brand:hover, .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
+#mainNav .navbar-brand:hover, .navbar-brand:focus {
+  /*color: rgba(255, 255, 255, 0.75); !important*/
 }
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
+  --bs-nav-link-font-weight: 1rem;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -12577,7 +12577,7 @@ body {
 
 #mainNav .navbar-brand {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0.9rem 0;
 }
 
