@@ -139,7 +139,7 @@ h3, .h3 {
 
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -12718,7 +12718,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 20rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 
@@ -12846,7 +12846,6 @@ body {
   right: 0;
 }
 
-
 .logo {
   width: 30px;
   margin-right: 10px;
@@ -12868,4 +12867,13 @@ body {
 }
 
 .subtitle {
+}
+
+.rugby {
+  z-index: 0;
+}
+
+.about {
+  justify-items: end;
+  text-align: end;
 }
