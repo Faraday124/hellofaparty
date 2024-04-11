@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -65,7 +55,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #afb4b6;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -144,12 +134,12 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  /*font-size: calc(1.3rem + 0.6vw);*/
 }
 
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -12688,10 +12678,13 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  /*background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*-webkit-background-clip: text;*/
+  /*background-clip: text;*/
+  color: #ffffff;
+  opacity: 0.9;
+  font-weight: bold;
 }
 
 .masthead h2, .masthead .h2 {
@@ -12701,8 +12694,8 @@ body {
 
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -12714,8 +12707,8 @@ body {
 
   .masthead h1, .masthead .h1 {
     font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.8rem;
+    line-height: 5rem;
+    letter-spacing: 0.1rem;
   }
 
   .masthead h2, .masthead .h2 {
@@ -12831,7 +12824,10 @@ body {
 .joinus {
   width: 250px;
   opacity: 0.47;
-  overflow: auto;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -12845,14 +12841,31 @@ body {
 }
 
 .cheerleader-main {
-  margin-left: auto;
-  margin-right: 0;
   position: absolute;
   z-index: 0;
-  display: block;
+  right: 0;
 }
 
 
 .logo {
-  width: 80px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.title-container {
+  margin-top: 300px;
+}
+
+#buy-ticket {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-image: url('../assets/img/buy_ticket.png');
+  background-size: cover;
+  width: 500px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.subtitle {
 }
