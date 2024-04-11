@@ -4235,7 +4235,7 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-color: #fff;
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
@@ -4304,7 +4304,8 @@ textarea.form-control-lg {
 
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
-  color: var(--bs-navbar-active-color);
+  color: #601111;
+  /*var(--bs-navbar-active-color);*/
 }
 
 .navbar-nav .dropdown-menu {
@@ -12576,8 +12577,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #601111;
+  border: 1px solid #601111;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -12683,11 +12684,11 @@ body {
 }
 
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -12712,8 +12713,8 @@ body {
   }
 
   .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
     letter-spacing: 0.8rem;
   }
 
@@ -12828,12 +12829,9 @@ body {
 }
 
 .joinus {
-  width: 200px;
+  width: 250px;
   opacity: 0.47;
   overflow: auto;
-  float: right;
-  margin-bottom: 70px;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -12844,4 +12842,17 @@ body {
 
 .cheerleader {
   width: 150px;
+}
+
+.cheerleader-main {
+  margin-left: auto;
+  margin-right: 0;
+  position: absolute;
+  z-index: 0;
+  display: block;
+}
+
+
+.logo {
+  width: 80px;
 }
