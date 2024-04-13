@@ -13066,3 +13066,29 @@ body {
   margin-top: 4rem;
   justify-content: space-evenly;
 }
+
+.carousel-item {
+  transition: transform 0.3s ease;
+}
+
+.gallery-desktop {
+  display: none; !important;
+}
+
+@media (min-width: 554px) {
+  .gallery-desktop {
+    display: flex;
+  }
+}
+
+#location-gallery-carousel {
+  display: block;
+}
+
+@media (min-width: 554px) {
+  #location-gallery-carousel {
+    display: none;
+  }
+}
+
+
