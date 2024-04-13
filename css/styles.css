@@ -12961,6 +12961,7 @@ body {
   width: 100%;
   top: 8rem;
 }
+
 @media (min-width: 554px) {
   .cheerleader-mobile {
     display: none;
@@ -12974,7 +12975,6 @@ body {
 }
 
 .overlay-text {
-  width: 700px;
   position: absolute;
   top: 30%;
   left: 70%;
@@ -12985,6 +12985,12 @@ body {
   background: #000;
   opacity: 0.5;
   padding: 4rem;
+}
+
+@media (min-width: 768px) {
+  .overlay-text {
+    width: 700px;
+  }
 }
 
 .video-container {
