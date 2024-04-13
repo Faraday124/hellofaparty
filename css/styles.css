@@ -12870,6 +12870,7 @@ body {
 .subtitle {
 }
 
+@media (min-width: 992px)
 .rugby {
   z-index: 0;
   width: 1000px;
@@ -12909,7 +12910,18 @@ body {
   padding: 20px;
 }
 
+.grow-animation {
+  animation: grow 1.5s ease forwards;
+}
+
+@keyframes grow {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 .location-gallery{
   margin-bottom: 6rem;
   margin-top: 6rem;
+  justify-content: space-evenly;
 }
