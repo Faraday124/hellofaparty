@@ -48,12 +48,11 @@
         <img class="joinus" src="assets/img/joinus.gif" alt="joinus"/>
         <h1 class="mx-auto my-0">American College Party</h1>
         <div class="subtitle">
-          <!--          <h3 class=" text-uppercase">Impreza inna niż wszystkie</h3>-->
           <h3>21:30</h3>
           <h3>18/05/2024, Sobota</h3>
         </div>
           <a href="#signup" id="buy-ticket">
-            <img src="assets/img/buy_ticket.png" alt="Button Image">
+            <img src="assets/img/buy_ticket.png" alt="Button Image" class="buy-ticket-btn">
           </a>
       </div>
     </div>
@@ -115,7 +114,7 @@
 
 <section >
   <div class="video-container pb-lg-5">
-    <video autoplay muted loop class="hop-video">
+    <video autoplay muted loop class="hop-video" id="hop-video">
       <source src="assets/video/hop-video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -129,52 +128,53 @@
 </section>
 
 <!--Party Gallery-->
-<section class="location-gallery pt-lg-5">
-  <div class="d-flex">
-    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e1.webp" alt="..."/></div>
-    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e2.webp" alt="..."/></div>
-    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e3.webp" alt="..."/></div>
-    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e4.webp" alt="..."/></div>
-  </div>
-</section>
+<!--<section class="party-gallery pt-lg-5">-->
+<!--  <div class="d-flex">-->
+<!--    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e1.webp" alt="..."/></div>-->
+<!--    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e2.webp" alt="..."/></div>-->
+<!--    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e3.webp" alt="..."/></div>-->
+<!--    <div class="col-lg-3"><img class="gallery-pic" src="assets/img/e4.webp" alt="..."/></div>-->
+<!--  </div>-->
+<!--</section>-->
 
 <!-- Signup-->
-<section class="signup-section pt-lg-5" id="signup">
-  <div class="container px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
-        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-        <h2 class="text-white mb-5">Wpadaj na imprezę!</h2>
-        <form
-          class="form-signup"
-          id="contactForm"
-          method="post"
-          action="https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec">
-          <!-- Email address input-->
-          <div class="row input-group-newsletter">
-            <div class="col"><input class="form-control" name="email" id="email" type="email" placeholder="E-mail"
-                                    aria-label="Enter email address..."/></div>
-            <div class="col-auto">
-              <button class="btn btn-primary" id="submitButton" type="submit">Zapisz się!</button>
-            </div>
-          </div>
-          <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-          <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+<!--<section class="signup-section pt-lg-5" id="signup">-->
+<!--  <div class="container px-4 px-lg-5">-->
+<!--    <div class="row gx-4 gx-lg-5">-->
+<!--      <div class="col-md-10 col-lg-8 mx-auto text-center">-->
+<!--        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>-->
+<!--        <h2 class="text-white mb-5">Wpadaj na imprezę!</h2>-->
+<!--        <form-->
+<!--          class="form-signup"-->
+<!--          id="contactForm"-->
+<!--          method="post"-->
+<!--          action="https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec">-->
+<!--          &lt;!&ndash; Email address input&ndash;&gt;-->
+<!--          <div class="row input-group-newsletter">-->
+<!--            <div class="col"><input class="form-control" name="email" id="email" type="email" placeholder="E-mail"-->
+<!--                                    aria-label="Enter email address..."/></div>-->
+<!--            <div class="col-auto">-->
+<!--              <button class="btn btn-primary" id="submitButton" type="submit">Zapisz się!</button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>-->
+<!--          <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>-->
 
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3 mt-2 text-white">
-              <div class="fw-bolder">Horray!</div>
-              <br/>
-            </div>
-          </div>
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+<!--          <div class="d-none" id="submitSuccessMessage">-->
+<!--            <div class="text-center mb-3 mt-2 text-white">-->
+<!--              <div class="fw-bolder">Horray!</div>-->
+<!--              <br/>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="d-none" id="submitErrorMessage">-->
+<!--            <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
 <!-- Contact-->
 <section class="contact-section bg-black">
   <div class="container px-4 px-lg-5">
@@ -212,11 +212,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="social d-flex justify-content-center">
-      <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-      <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-      <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
     </div>
   </div>
 </section>

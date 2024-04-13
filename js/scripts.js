@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', event => {
 
+  var video = document.getElementById('hop-video');
+  video.play();
+
   // Navbar shrink function
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector('#mainNav');
