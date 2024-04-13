@@ -13028,17 +13028,23 @@ body {
   object-fit: cover;
 }
 
+.overlay-text {
+  position: relative;
+  background: #000;
+  opacity: 0.5;
+  color: white;
+  width: 100%;
+  top: 50rem;
+}
+
 @media (min-width: 554px) {
   .overlay-text {
     position: absolute;
     top: 30%;
     left: 70%;
     transform: translate(-50%, -50%); /* Center the text vertically and horizontally */
-    text-align: right; /* Center-align the text */
-    z-index: 1; /* Place the text overlay above the video */
-    color: white; /* Text color */
-    background: #000;
-    opacity: 0.5;
+    text-align: right;
+    z-index: 1;
     padding: 4rem;
   }
 }

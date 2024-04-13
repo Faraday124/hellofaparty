@@ -82,5 +82,4 @@ window.addEventListener('DOMContentLoaded', event => {
         // Optionally update UI or show error message
       });
   });
-
 });
