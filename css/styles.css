@@ -4294,7 +4294,7 @@ textarea.form-control-lg {
 
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
-  color: #601111;
+  color: #ffffff;
   /*var(--bs-navbar-active-color);*/
 }
 
@@ -12569,8 +12569,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #601111;
-  border: 1px solid #601111;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -12665,7 +12665,7 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   min-height: 35rem;
   padding-top: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/beerpong.webp");
@@ -12842,7 +12842,18 @@ body {
 .joinus {
   width: 250px;
   opacity: 0.47;
-  margin-top: -350px
+  position: absolute;
+  top: 100px;
+  left: 60px;
+}
+
+@media (min-width: 554px) {
+  .joinus {
+    margin-top: -350px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -12959,13 +12970,21 @@ body {
 }
 
 .gallery-pic {
+  flex: 0 0 100%;
   max-width: 100%;
-  height: 100%;
-  padding: 20px;
 }
 
-.grow-animation {
-  animation: grow 1.5s ease forwards;
+@media (min-width: 554px) {
+  .gallery-pic {
+    height: 100%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 554px) {
+  .grow-animation {
+    animation: grow 1.5s ease forwards;
+  }
 }
 
 @keyframes grow {
@@ -12994,7 +13013,7 @@ body {
   display: inline-block;
   position: absolute;
   width: 100%;
-  top: 8rem;
+  top: 15rem;
 }
 
 @media (min-width: 554px) {
