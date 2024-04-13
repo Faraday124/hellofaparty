@@ -12728,7 +12728,13 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 0;
+  background: url('../assets/img/palacyk_bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 
 .projects-section .featured-text {
@@ -12878,4 +12884,32 @@ body {
   width: 100%;
   line-height: 20px;
   text-decoration: underline;
+}
+
+.location {
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.location-info {
+  background: #000;
+  color: white;
+  opacity: 0.75;
+  max-width: 40%;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.gallery-pic {
+  max-width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.location-gallery{
+  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
