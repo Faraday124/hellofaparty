@@ -1,10 +1,10 @@
 window.addEventListener('DOMContentLoaded', event => {
 
-  var video = document.getElementById('hop-video');
+  const video = document.getElementById('hop-video');
   video.play();
 
   // Navbar shrink function
-  var navbarShrink = function () {
+  const navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector('#mainNav');
     if (!navbarCollapsible) {
       return;
@@ -24,11 +24,11 @@ window.addEventListener('DOMContentLoaded', event => {
   document.addEventListener('scroll', navbarShrink);
 
   window.addEventListener('scroll', function () {
-    var scrollPosition = window.scrollY;
-    var images = document.querySelectorAll('.gallery-pic');
+    const scrollPosition = window.scrollY;
+    const images = document.querySelectorAll('.gallery-pic');
 
     images.forEach(function (image) {
-      var imagePosition = image.getBoundingClientRect().top;
+      const imagePosition = image.getBoundingClientRect().top;
 
       if (imagePosition < window.innerHeight) {
         image.classList.add('grow-animation');
@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', event => {
       rootMargin: '0px 0px -40%',
     });
   }
-  ;
+
 
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector('.navbar-toggler');
