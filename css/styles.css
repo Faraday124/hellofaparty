@@ -12702,7 +12702,7 @@ body {
   }
 
   .masthead h1 {
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.1rem;
   }
 }
 
@@ -12722,7 +12722,6 @@ body {
   .masthead h1, .masthead .h1 {
     font-size: 3rem;
     line-height: 5rem;
-    letter-spacing: 0.1rem;
   }
 
   .masthead h2, .masthead .h2 {
@@ -12875,7 +12874,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 554px) {
+@media screen and (min-width: 992px) {
   .cheerleader-main {
     display: inline-block;
     visibility: visible;
@@ -12932,17 +12931,19 @@ body {
 }
 
 .buy-ticket-btn {
-  width: 100%;
   position: absolute;
-  bottom: 10rem;
-  left: 0;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
+  width: 100%;
 }
 
 @media (min-width: 554px) {
   .buy-ticket-btn {
     position: static;
     bottom: 0;
+    transform: none;
     padding: 0;
   }
 }
