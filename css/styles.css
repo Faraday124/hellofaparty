@@ -12892,9 +12892,25 @@ body {
 }
 
 .title-container {
-  margin-top: 350px;
+  margin-top: 200px;
   z-index: 2;
   text-align: center;
+}
+
+@media (min-width: 554px) {
+  .title-container {
+    margin-top: 320px;
+  }
+}
+
+.title {
+  display: none;
+}
+
+@media (min-width: 554px) {
+  .title {
+    display: block;
+  }
 }
 
 @media (min-width: 554px) {
@@ -12917,8 +12933,19 @@ body {
 
 .buy-ticket-btn {
   width: 100%;
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
+  padding: 10px;
 }
 
+@media (min-width: 554px) {
+  .buy-ticket-btn {
+    position: static;
+    bottom: 0;
+    padding: 0;
+  }
+}
 
 .subtitle {
   display: none;
@@ -13023,9 +13050,10 @@ body {
 
 .cheerleader-mobile {
   display: inline-block;
-  position: absolute;
-  width: 25rem;
+  /*position: absolute;*/
+  width: 100%;
   top: 15rem;
+  z-index: -1;
 }
 
 @media (min-width: 554px) {
