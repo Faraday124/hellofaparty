@@ -15,10 +15,11 @@
       <h2>Lista gości</h2>
       <form id="buy-ticket-form">
         <div class="mb-3">
+          <input class="form-control guest-name" name="guest1-name" type="text" placeholder="Imię i nazwisko">
           <fieldset class="row mb-2 g-2 guest" name="guest1">
           <div class="input-group">
             <button class="btn btn-success add-btn" type="button"><i class="fa fa-solid fa-lg fa-plus"></i></button>
-            <input class="form-control guest-name" name="guest1-name" type="text" placeholder="Imię i nazwisko">
+            <input class="form-control guest-name text-wrap" name="guest1-name" type="text" placeholder="Twoja ekipa (jeśli robisz przelew za więcej osób)">
           </div>
           </fieldset>
         </div>
@@ -30,11 +31,9 @@
     </div>
     <div id="guest-template" style="display: none">
       <fieldset class="row mb-2 g-2 guest" name="guest4">
-        <div class="col-md-7 col-sm-7 col-12">
           <div class="input-group">
             <button class="btn btn-success remove-btn" type="button"><i class="fa fa-solid fa-lg fa-xmark"></i></button>
             <input class="form-control guest-name" name="guest4-name" type="text" placeholder="Imię i nazwisko">
-          </div>
         </div>
       </fieldset></div>
   </div>
