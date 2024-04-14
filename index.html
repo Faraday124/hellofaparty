@@ -31,9 +31,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#location">MIEJSCE</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">O NAS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">MIEJSCE</a></li>
-        <li class="nav-item"><a class="nav-link" href="#signup">KONTAKT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
       </ul>
     </div>
   </div>
@@ -60,12 +60,17 @@
 </header>
 
 <!-- Location-->
-<section class="projects-section bg-light" id="projects">
+<section class="projects-section bg-light" id="location">
   <div class="container location">
     <!--    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">-->
     <div class=" location-info">
       <h2 class="text-white-50 text-uppercase mb-lg-3">Gdzie?</h2>
-      <h2 class="text-white text-uppercase pb-lg-3">Pałacyk Wiskotta</h2>
+      <h2 class="text-white text-uppercase pb-lg-3">
+        <a class="text-decoration-none" href="https://maps.app.goo.gl/vhSRXQ7yzrWDnUbf6" role="button">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>
+        Pałacyk Wiskotta
+      </h2>
       <!--        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/palacyk.jpeg" alt="palacyk"/>-->
       <p>Jak przystało na ivy league, dom naszego bractwa HOP jest również
         pierwszoligowy. 18 maja to miejsce stanie się jeszcze bardziej magiczne, ponieważ ozdobią je dekoracje
@@ -104,6 +109,9 @@
       <div class="carousel-item">
         <img class="d-block w-100" src="assets/img/p3.webp" alt="Third slide">
       </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/p4.webp" alt="Fourth slide">
+      </div>
       <!-- Add more slides here -->
     </div>
     <a class="carousel-control-prev" href="#location-gallery-carousel" role="button" data-slide="prev">
@@ -135,7 +143,7 @@
 <!--  </div>-->
 <!--</section>-->
 
-<section>
+<section id="about">
   <div class="video-container pb-lg-5">
     <video playsinline autoplay muted loop class="hop-video" id="hop-video">
       <source src="assets/video/hop-video.mp4" type="video/mp4">
@@ -199,19 +207,23 @@
 <!--</section>-->
 
 <!-- Contact-->
-<section class="contact-section bg-black">
+<section class="contact-section bg-black" id="contact">
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5">
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">
-            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-            <h4 class="text-uppercase m-0">Adres</h4>
+            <a class="text-decoration-none" href="https://maps.app.goo.gl/vhSRXQ7yzrWDnUbf6" role="button">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">
+                Adres
+              </h4>
             <hr class="my-4 mx-auto"/>
             <div class="small">
               Pałacyk Wiskotta,
               <p>Podwale 63, Wrocław</p>
             </div>
+            </a>
           </div>
         </div>
       </div>
@@ -228,10 +240,12 @@
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">
-            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-            <h4 class="text-uppercase m-0">Phone</h4>
+            <a class="text-decoration-none" href="https://www.instagram.com/hop_hellofaparty/" role="button">
+            <i class="fab fa-instagram text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">INSTAGRAM</h4>
             <hr class="my-4 mx-auto"/>
-            <div class="small">+1 (555) 902-8832</div>
+            <div class="small">@HOP_HELLOFAPARTY</div>
+            </a>
           </div>
         </div>
       </div>
