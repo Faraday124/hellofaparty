@@ -12745,18 +12745,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 4rem;
-}
-
-@media (min-width: 554px) {
-  .location-section {
-    padding: 0;
-  }
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .location-section .featured-text {
   padding: 3rem;
+}
+@media (min-width: 554px) {
+  .location-section {
+    padding: 0;
+    margin-top: 3rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -12843,7 +12843,7 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .joinus {
@@ -12936,7 +12936,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
-  width: 100%;
+  width: 90%;
 }
 
 @media (min-width: 554px) {
@@ -13044,8 +13044,8 @@ body {
 
 @media (min-width: 554px) {
   .location-gallery {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 }
 
@@ -13066,8 +13066,7 @@ body {
 .hop-video {
   object-fit: cover;
   position: absolute;
-  top: 25rem;
-  margin-bottom: 3rem;
+  top: 24rem;
   width: 100%;
 }
 
@@ -13084,7 +13083,7 @@ body {
   width: 100%;
   top: 50rem;
   transform: none; /* Remove transform for mobile */
-  margin-top: 20px; /* Adjust margin-top as needed */
+  margin-top: 2rem;
   text-align: left;
   padding: 3rem;
 }
@@ -13113,12 +13112,24 @@ body {
 .video-container {
   position: relative;
   width: 100%;
-  height: 40rem;
+  height: 35rem;
 }
 
 @media (min-width: 554px) {
   .video-container {
-    height: 50rem;
+    height: 35rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-container {
+    height: 40rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .video-container {
+    height: 42rem;
   }
 }
 
