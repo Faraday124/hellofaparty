@@ -12672,7 +12672,7 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/beerpong.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 
@@ -12697,6 +12697,7 @@ body {
 @media (min-width: 554px) {
   .masthead {
     padding: 15rem 0;
+    background-attachment: fixed;
   }
 
   .masthead h1 {
