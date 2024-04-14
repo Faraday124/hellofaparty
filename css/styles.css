@@ -12945,6 +12945,7 @@ body {
     bottom: 0;
     transform: none;
     padding: 0;
+    content:url("../assets/img/buy-ticket.png");
   }
 }
 
