@@ -61,25 +61,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   });
 
-  document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent default form submission
-
-    var formData = new FormData(this); // Get form data
-
-    // Perform asynchronous form submission
-    fetch('https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec', {
-      method: 'POST',
-      body: formData
-    })
-      .then(response => {
-        // Handle response (e.g., show success message)
-        console.log('Form submission successful');
-        // Optionally update UI or show success message
-      })
-      .catch(error => {
-        // Handle error (e.g., show error message)
-        console.error('Error submitting form:', error);
-        // Optionally update UI or show error message
-      });
-  });
 });

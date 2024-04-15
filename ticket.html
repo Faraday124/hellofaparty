@@ -10,32 +10,43 @@
 </head>
 <body>
 <header class="masthead">
-  <div class="container d-flex h-100 align-items-center justify-content-center">
-    <div class="ticket-container">
-      <h2>Lista gości</h2>
-      <form id="buy-ticket-form">
+  <div class="d-flex h-100 align-items-center justify-content-center">
+    <div class="ticket-container d-flex h-100 align-items-center justify-content-center">
+      <form
+        id="buy-ticket-form"
+        action="https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec"
+        method="post"
+      >
+        <img src="assets/img/guest-list-title.png" alt="Guest List" class="guest-list-title">
         <div class="mb-3">
-          <input class="form-control guest-name" name="guest1-name" type="text" placeholder="Imię i nazwisko">
+          <input class="form-control guest-name" name="name" type="text" placeholder="Imię i nazwisko">
           <fieldset class="row mb-2 g-2 guest" name="guest1">
-          <div class="input-group">
-            <button class="btn btn-success add-btn" type="button"><i class="fa fa-solid fa-lg fa-plus"></i></button>
-            <input class="form-control guest-name text-wrap" name="guest1-name" type="text" placeholder="Twoja ekipa (jeśli robisz przelew za więcej osób)">
-          </div>
+            <div class="input-group">
+              <button class="btn btn-success add-btn" type="button"><i class="fa fa-solid fa-lg fa-plus"></i></button>
+              <input class="form-control guest-name text-wrap" name="guest1-name" type="text"
+                     placeholder="Twoja ekipa&#10; (jeśli robisz przelew za więcej osób)">
+            </div>
           </fieldset>
         </div>
         <div class="mb-3">
           <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" id="buy-ticket-btn" class="ticket-form-btn">
+<!--          <img src="assets/img/ticket-form-btn.png" alt="Button Image" class="ticket-form-btn">-->
+        </button>
       </form>
     </div>
     <div id="guest-template" style="display: none">
       <fieldset class="row mb-2 g-2 guest" name="guest4">
-          <div class="input-group">
-            <button class="btn btn-success remove-btn" type="button"><i class="fa fa-solid fa-lg fa-xmark"></i></button>
-            <input class="form-control guest-name" name="guest4-name" type="text" placeholder="Imię i nazwisko">
+        <div class="input-group">
+          <button class="btn btn-success remove-btn" type="button"><i class="fa fa-solid fa-lg fa-xmark"></i></button>
+          <input class="form-control guest-name" name="guest4-name" type="text" placeholder="Imię i nazwisko">
         </div>
-      </fieldset></div>
+      </fieldset>
+    </div>
+    <div>
+      <img src="assets/img/teacher.png" alt="Teacher" class="teacher">
+    </div>
   </div>
 </header>
 <script src="js/ticket.js"></script>
