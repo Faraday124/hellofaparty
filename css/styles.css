@@ -13243,7 +13243,7 @@ body {
 }
 
 .teacher {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   left: 0;
 }
@@ -13255,7 +13255,7 @@ body {
 }
 
 .price {
-  position: absolute;
+  position: fixed;
   bottom: 250px;
   right: 20px;
   text-align: end;
@@ -13321,9 +13321,10 @@ body {
 }
 
 .see-you {
-  position: absolute;
-  bottom: 150px;
-  right: 10px;
+  position: fixed;
+  bottom: 17rem;
+  right: -8rem;
+  transform: rotate(-15deg);
 }
 
 
