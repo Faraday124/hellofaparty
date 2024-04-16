@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', event => {
     let count = 1;
 
     for (const key of formData.keys()) {
-      if (key.includes('guest')) {
+      if (key.includes('guest') && formData.get(key)) {
         count++;
       }
     }
