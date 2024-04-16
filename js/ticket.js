@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', event => {
-  console.log('sffs');
   "use strict";
   $("#buy-ticket-form").on("click", ".remove-btn", function () {
     $(this).closest("fieldset.guest").remove();
@@ -45,7 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
         if (response.ok) {
           document.getElementById('spinner').style.display = 'none';
           document.getElementById('spinner-overlay').style.display = 'none';
-          window.location.href = `/hellofaparty/success.html?title=${price}&title=${title}`;
+          window.location.href = `/hellofaparty/success.html?title=${title}&price=${price}`;
         } else {
           // Handle error response
           console.error('Error:', response.statusText);
