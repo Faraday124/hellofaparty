@@ -18,21 +18,20 @@
         method="post"
       >
         <img src="assets/img/guest-list-title.png" alt="Guest List" class="guest-list-title">
-        <div class="mb-3">
+        <div class="mb-2">
           <input class="form-control guest-name" name="name" type="text" placeholder="Imię i nazwisko">
-          <fieldset class="row mb-2 g-2 guest" name="guest1">
-            <div class="input-group">
-              <button class="btn btn-success add-btn" type="button"><i class="fa fa-solid fa-lg fa-plus"></i></button>
-              <input class="form-control guest-name text-wrap" name="guest1-name" type="text"
-                     placeholder="Twoja ekipa&#10; (jeśli robisz przelew za więcej osób)">
-            </div>
-          </fieldset>
         </div>
-        <div class="mb-3">
+        <fieldset class="row mb-2 g-2 guest" name="guest1">
+          <div class="input-group">
+            <button class="btn btn-success add-btn" type="button"><i class="fa fa-solid fa-lg fa-plus"></i></button>
+            <input class="form-control guest-name text-wrap" name="guest1-name" type="text"
+                   placeholder="Twoja ekipa&#10; (jeśli robisz przelew za więcej osób)">
+          </div>
+        </fieldset>
+        <div class="mb-5">
           <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
         </div>
         <button type="submit" id="buy-ticket-btn" class="ticket-form-btn">
-<!--          <img src="assets/img/ticket-form-btn.png" alt="Button Image" class="ticket-form-btn">-->
         </button>
       </form>
     </div>
