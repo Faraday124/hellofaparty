@@ -13214,10 +13214,28 @@ body {
   text-align: center;
 }
 
+@media (min-width: 554px) {
+  .ticket-container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 554px) {
+  .ticket-container input {
+    height: auto;
+  }
+}
+
 .ticket-container input::placeholder {
   text-align: center;
   font-size: 30px;
   vertical-align: center;
+}
+
+@media (min-width: 554px) {
+  .ticket-container input::placeholder {
+    font-size: 20px;
+  }
 }
 
 .guest-list-title {
@@ -13232,7 +13250,23 @@ body {
 
 @media (min-width: 554px) {
   .teacher {
+
   }
+}
+
+.price {
+  position: absolute;
+  bottom: 250px;
+  right: 20px;
+  text-align: end;
+}
+
+.price-info {
+  text-align: end;
+  bottom: 140px;
+  right: 20px;
+  position: absolute;
+  font-size: 30px;
 }
 
 .ticket-form-btn {
@@ -13245,6 +13279,12 @@ body {
   background-repeat: no-repeat;
   color: transparent;
   border: none;
+}
+
+@media (min-width: 554px) {
+  .ticket-form-btn {
+    background-size: contain !important;
+  }
 }
 
 

@@ -26,9 +26,13 @@ window.addEventListener('DOMContentLoaded', event => {
       body: formData
     })
       .then(response => {
-        // Handle response (e.g., show success message)
-        console.log('Form submission successful');
-        // Optionally update UI or show success message
+        if (response.ok) {
+          // If the response is successful, redirect to the success page
+          window.location.href = '/success';
+        } else {
+          // Handle error response
+          console.error('Error:', response.statusText);
+        }
       })
       .catch(error => {
         // Handle error (e.g., show error message)

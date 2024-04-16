@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hell of a party - Success</title>
+  <link rel="icon" type="image/sx-icon" href="assets/favicon.ico"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="d-flex h-100 align-items-center justify-content-center">
+    <div class="ticket-container d-flex h-100 align-items-center justify-content-center">
+      <form id="sucess-form">
+        <h1 class="text-uppercase">Dane do przelewu</h1>
+        <div class="mb-2">
+          <label for="receiver">Odbiorca:</label>
+            <input id="receiver" class="form-control account-name" type="text" placeholder="HELL OF A PARTY SP. Z O.O" disabled>
+        </div>
+        <label for="account-number">Numer konta:</label>
+        <input class="form-control account-number text-wrap" type="text" id="account-number"
+               placeholder="0000 0000 0000 0000 0000" disabled>
+        <div class="mb-5">
+          <label for="transfer-title">Tytuł przelewu:</label>
+          <input type="text" class="form-control" id="transfer-title" placeholder="Tytuł przelewu" disabled>
+        </div>
+        <input type="text" class="form-control" id="amount" placeholder="Ilość osób " disabled>
+      </form>
+    </div>
+
+    <img src="assets/img/see-you.png" alt="See you" class="see-you">
+    <div class="text-white price-info">
+      *Do 22/04 <br/>
+      *23/04-30/04 90 PLN <br/>
+      *30/04-18/05 100 PLN <br/>
+    </div>
+  </div>
+</header>
+<script src="js/ticket.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
