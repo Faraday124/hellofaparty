@@ -10,6 +10,10 @@
 </head>
 <body>
 <header class="masthead">
+  <div id="spinner-overlay" style="display: none;"></div>
+  <div id="spinner" style="display: none;">
+    <img src="assets/img/logo.png" alt="Loading spinner">
+  </div>
   <div class="d-flex h-100 align-items-center justify-content-center">
     <div class="ticket-container d-flex h-100 align-items-center">
       <form
@@ -19,7 +23,7 @@
       >
         <img src="assets/img/guest-list-title.png" alt="Guest List" class="guest-list-title">
         <div class="mb-2">
-          <input class="form-control guest-name" name="name" type="text" placeholder="Imię i nazwisko">
+          <input class="form-control guest-name" name="name" type="text" placeholder="Imię i nazwisko" required>
         </div>
         <fieldset class="row mb-2 g-2 guest" name="guest1">
           <div class="input-group">

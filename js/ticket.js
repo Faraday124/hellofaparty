@@ -16,20 +16,25 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 
   document.getElementById('buy-ticket-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
 
-    var formData = new FormData(this); // Get form data
+    document.getElementById('spinner').style.display = 'block';
+    document.getElementById('spinner-overlay').style.display = 'block';
 
-    var count = 1;
+    const formData = new FormData(this);
 
-    for (const [key, value] of formData.entries()) {
-        if(key.contains('guest')) {
-          count++;
-        }
+    console.log(formData);
+
+    let count = 1;
+
+    for (const key of formData.keys()) {
+      if (key.includes('guest')) {
+        count++;
+      }
     }
 
-    var price = count * 85;
-    var title = formData.entries()['name'].trim()
+    const price = count * 85;
+    const title = formData.get('name') + '- HOP';
 
     // Perform asynchronous form submission
     fetch('https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec', {
@@ -38,8 +43,9 @@ window.addEventListener('DOMContentLoaded', event => {
     })
       .then(response => {
         if (response.ok) {
-
-          window.location.href = '/hellofaparty/success.html';
+          document.getElementById('spinner').style.display = 'none';
+          document.getElementById('spinner-overlay').style.display = 'none';
+          window.location.href = `/hellofaparty/success.html?title=${price}&title=${title}`;
         } else {
           // Handle error response
           console.error('Error:', response.statusText);
