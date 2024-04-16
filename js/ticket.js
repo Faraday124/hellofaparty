@@ -20,6 +20,17 @@ window.addEventListener('DOMContentLoaded', event => {
 
     var formData = new FormData(this); // Get form data
 
+    var count = 1;
+
+    for (const [key, value] of formData.entries()) {
+        if(key.contains('guest')) {
+          count++;
+        }
+    }
+
+    var price = count * 85;
+    var title = formData.entries()['name'].trim()
+
     // Perform asynchronous form submission
     fetch('https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec', {
       method: 'POST',
@@ -27,8 +38,8 @@ window.addEventListener('DOMContentLoaded', event => {
     })
       .then(response => {
         if (response.ok) {
-          // If the response is successful, redirect to the success page
-          window.location.href = '/success';
+
+          window.location.href = '/hellofaparty/success.html';
         } else {
           // Handle error response
           console.error('Error:', response.statusText);
