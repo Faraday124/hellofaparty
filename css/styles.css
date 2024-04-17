@@ -2302,8 +2302,8 @@ progress {
 }
 
 .form-control:disabled {
-  background-color: #e9ecef;
-  opacity: 1;
+  /*background-color: #e9ecef;*/
+  /*opacity: 1;*/
 }
 
 .form-control::file-selector-button {
@@ -12675,6 +12675,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  overflow: hidden;
 }
 
 .masthead h1, .masthead .h1 {
@@ -13339,7 +13340,7 @@ body {
 }
 
 .see-you {
-  position: fixed;
+  position: absolute;
   bottom: 17rem;
   right: -8rem;
   transform: rotate(-15deg);
