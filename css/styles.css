@@ -12676,6 +12676,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .masthead h1, .masthead .h1 {
@@ -13344,6 +13345,19 @@ body {
   bottom: 17rem;
   right: -8rem;
   transform: rotate(-15deg);
+}
+
+.xxx {
+  opacity: 0.7;
+  border-radius: 100px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
 
