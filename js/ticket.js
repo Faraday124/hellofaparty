@@ -24,16 +24,21 @@ window.addEventListener('DOMContentLoaded', event => {
 
     console.log(formData);
 
-    let count = 1;
+    let guests = [];
 
     for (const key of formData.keys()) {
       if (key.includes('guest') && formData.get(key)) {
-        count++;
+        guests.push(formData.get(key))
+        formData.delete(key);
       }
     }
 
-    const price = count * 85;
-    const title = formData.get('name') + '- HOP';
+    const price = (1 + guests.length) * 85;
+    const title = formData.get('name') + ' - HOP';
+
+    formData.append('price', price.toString());
+    formData.append('transferTitle', title);
+    formData.append('guests', JSON.stringify(guests));
 
     // Perform asynchronous form submission
     fetch('https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec', {
