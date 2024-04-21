@@ -29,11 +29,10 @@ window.addEventListener('DOMContentLoaded', event => {
     for (const key of formData.keys()) {
       if (key.includes('guest') && formData.get(key)) {
         guests.push(formData.get(key))
-        formData.delete(key);
       }
     }
 
-    const price = (1 + guests.length) * 85;
+    const price = (1 + guests.length) * 100;
     const title = formData.get('name') + ' - HOP';
 
     formData.append('price', price.toString());

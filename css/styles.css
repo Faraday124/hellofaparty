@@ -13297,7 +13297,7 @@ body {
   border-radius: 100px;
   color: white;
   padding: 15px;
-  font-size: 15px;
+  font-size: 25px;
   height: 100px;
 }
 
@@ -13305,6 +13305,7 @@ body {
   .ticket-form-btn {
     background-size: contain !important;
     height: auto;
+    font-size: 15px;
   }
 }
 
@@ -13347,6 +13348,13 @@ body {
   bottom: 17rem;
   right: -8rem;
   transform: rotate(-15deg);
+}
+
+@media (min-width: 992px) {
+  .see-you {
+    width: 400px;
+    right: 0;
+  }
 }
 
 #sucess-form input {
@@ -13432,5 +13440,10 @@ body {
   width: 100%;
 }
 
+@media (min-width: 992px) {
+  .ticket-container h1 {
+    font-size: 30px; !important;
+  }
+}
 
 
