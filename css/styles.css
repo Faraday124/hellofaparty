@@ -12925,10 +12925,6 @@ body {
   padding: 0;
   margin: 0;
   border: none;
-  background-image: url('../assets/img/buy-ticket.png');
-  background-size: cover;
-  width: 500px;
-  height: 60px;
   cursor: pointer;
   z-index: 10;
 }
@@ -13018,6 +13014,8 @@ body {
   .gallery-pic {
     height: 100%;
     padding: 20px;
+    object-fit: cover;
+    max-height: 600px;
   }
 }
 
@@ -13159,7 +13157,6 @@ body {
 @media (min-width: 554px) {
   .gallery-desktop {
     display: flex;
-
   }
 }
 
@@ -13220,13 +13217,16 @@ body {
 
 @media (min-width: 554px) {
   .ticket-container {
-    width: 700px;
+    width: 500px;
   }
 }
 
 @media (min-width: 554px) {
   .ticket-container input {
-    /*height: auto;*/
+    height: auto;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
   }
 }
 
@@ -13238,7 +13238,7 @@ body {
 
 @media (min-width: 554px) {
   .ticket-container input::placeholder {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -13289,16 +13289,15 @@ body {
 
 .ticket-form-btn {
   width: 100%;
-  margin-top: 30px;
-  margin-left: 20px;
-  height: 200px;
-  background-size: cover !important;
-  background: url(../assets/img/ticket-form-btn.png);
-  background-repeat: no-repeat;
-  color: transparent;
+  background-color: #FFCC00;
+  background-size: cover;
   border: none;
   position: relative;
   z-index: 10;
+  border-radius: 100px;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
 }
 
 @media (min-width: 554px) {
@@ -13327,6 +13326,7 @@ body {
   transition: background-color 1s, backdrop-filter 0.5s;
   z-index: 9998;
 }
+
 #spinner img {
   animation: pulse 0.5s infinite alternate;
 }
@@ -13378,23 +13378,47 @@ body {
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 
