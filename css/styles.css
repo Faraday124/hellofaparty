@@ -13215,13 +13215,13 @@ body {
   position: relative;
 }
 
-@media (min-width: 554px) {
+@media (min-width: 992px) {
   .ticket-container {
     width: 500px;
   }
 }
 
-@media (min-width: 554px) {
+@media (min-width: 992px) {
   .ticket-container input {
     height: auto;
     padding: 5px;
@@ -13236,7 +13236,7 @@ body {
   vertical-align: center;
 }
 
-@media (min-width: 554px) {
+@media (min-width: 992px) {
   .ticket-container input::placeholder {
     font-size: 15px;
   }
@@ -13253,7 +13253,7 @@ body {
   z-index: 0;
 }
 
-@media (min-width: 554px) {
+@media (min-width: 992px) {
   .teacher {
     width: 200px;
   }
@@ -13272,11 +13272,12 @@ body {
 }
 
 .price {
-  position: absolute;
-  bottom: 250px;
-  right: 20px;
+  /*position: absolute;*/
+  /*bottom: 120px;*/
+  /*right: 20px;*/
   text-align: end;
   z-index: 0;
+  max-width: 200px;
 }
 
 .price-info {
@@ -13284,7 +13285,6 @@ body {
   bottom: 140px;
   right: 20px;
   position: absolute;
-  font-size: 30px;
 }
 
 .ticket-form-btn {
@@ -13298,11 +13298,13 @@ body {
   color: white;
   padding: 15px;
   font-size: 15px;
+  height: 100px;
 }
 
-@media (min-width: 554px) {
+@media (min-width: 992px) {
   .ticket-form-btn {
     background-size: contain !important;
+    height: auto;
   }
 }
 
