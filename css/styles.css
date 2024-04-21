@@ -12676,7 +12676,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
   overflow: hidden;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
 }
 
 .masthead h1, .masthead .h1 {
