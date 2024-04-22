@@ -2916,6 +2916,7 @@ textarea.form-control-lg {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+/*  here*/
 }
 
 .input-group > .form-floating:not(:first-child) > .form-control,
@@ -12670,10 +12671,10 @@ body {
   height: 100dvh;
   min-height: 35rem;
   padding-top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/beerpong-mobile.webp");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/beerpong.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   overflow: hidden;
   /*overflow-y: auto;*/
@@ -12709,11 +12710,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .masthead {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/beerpong.webp");
-    background-size: cover;
-  }
-
   .masthead h1, .masthead .h1 {
     font-size: 2rem;
     line-height: 3rem;
@@ -12936,7 +12932,7 @@ body {
 
 .buy-ticket-btn {
   position: absolute;
-  bottom: 20px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
