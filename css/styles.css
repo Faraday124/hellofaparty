@@ -13277,7 +13277,13 @@ body {
   /*right: 20px;*/
   text-align: end;
   z-index: 0;
-  max-width: 200px;
+  width: 300px;
+}
+
+@media (min-width: 992px) {
+  .price {
+    width: 150px;
+  }
 }
 
 .price-info {
