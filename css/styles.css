@@ -13454,7 +13454,8 @@ body {
   }
 }
 
-#exampleCheck1 {
+#terms-conditions-checkbox {
+  height: auto;
   width: auto;
   justify-content: center;
   align-content: center;
