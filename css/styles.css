@@ -13465,6 +13465,13 @@ body {
 .checkbox-container {
   display: inline-flex;
   align-items: center;
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  .checkbox-container {
+    font-size: 18px;
+  }
 }
 
 .terms-conditions {
