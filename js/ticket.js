@@ -1,3 +1,5 @@
+const PRICE = 100;
+
 window.addEventListener('DOMContentLoaded', event => {
   "use strict";
   $("#buy-ticket-form").on("click", ".remove-btn", function () {
@@ -32,7 +34,7 @@ window.addEventListener('DOMContentLoaded', event => {
       }
     }
 
-    const price = (1 + guests.length) * 100;
+    const price = (1 + guests.length) * PRICE;
     const title = formData.get('name') + ' - HOP';
 
     formData.append('price', price.toString());

@@ -2916,7 +2916,7 @@ textarea.form-control-lg {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-/*  here*/
+  /*  here*/
 }
 
 .input-group > .form-floating:not(:first-child) > .form-control,
@@ -13225,8 +13225,8 @@ body {
 @media (min-width: 992px) {
   .ticket-container input {
     height: auto;
-    padding: 5px;
-    font-size: 25px;
+    padding: 10px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -13364,7 +13364,7 @@ body {
   }
 }
 
-#sucess-form input {
+#success-form input {
   cursor: pointer;
 }
 
@@ -13449,8 +13449,25 @@ body {
 
 @media (min-width: 992px) {
   .ticket-container h1 {
-    font-size: 30px; !important;
+    font-size: 30px;
+  !important;
   }
 }
 
+#exampleCheck1 {
+  width: auto;
+  justify-content: center;
+  align-content: center;
+  margin: 0 8px 0 1rem;
+}
 
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.terms-conditions {
+  max-width: 800px;
+  padding: 4rem;
+  flex-direction: column;
+}
