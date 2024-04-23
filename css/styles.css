@@ -13384,10 +13384,11 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center; /* Centered text */
   padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
+  position: absolute; /* Sit on top of the screen */
   z-index: 1; /* Add a z-index if needed */
   left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
+  margin-top: 20px;
+  /*bottom: 30px; !* 30px from the bottom *!*/
 }
 
 #snackbar.show {
@@ -13401,22 +13402,22 @@ body {
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
   from {
-    bottom: 0;
+    /*bottom: 0;*/
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    /*bottom: 30px;*/
     opacity: 1;
   }
 }
 
 @keyframes fadein {
   from {
-    bottom: 0;
+    /*bottom: 0;*/
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    /*bottom: 30px;*/
     opacity: 1;
   }
 }
