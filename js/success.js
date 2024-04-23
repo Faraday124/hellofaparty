@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
     snackbar.style.display = 'block';
     setTimeout(function () {
       snackbar.style.display = 'none';
-    }, 1000);
+    }, 1500);
     snackbar.className = "show";
 
     // After 3 seconds, remove the show class from DIV
