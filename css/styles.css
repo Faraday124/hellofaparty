@@ -13386,7 +13386,7 @@ body {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   margin-left: -125px; /* Divide value of min-width by 2 */
-  background: #FFCC00;
+  background: linear-gradient(135deg, #66bb6a, #43a047);
   color: #fff;
   border-radius: 100px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);

@@ -16,16 +16,20 @@
         <h1 class="text-uppercase text-center transfer-tile">Dane do przelewu</h1>
         <div class="mb-2">
           <label for="receiver" class="mb-2">Odbiorca:</label>
-            <input id="receiver" class="form-control account-name" type="text" value="HELL OF A PARTY SP. Z O.O" readonly>
+          <input id="receiver" class="form-control account-name" type="text" value="HELL OF A PARTY SP. Z O.O."
+                 readonly>
         </div>
         <label for="account-number" class="mb-2">Numer konta:</label>
         <input class="form-control account-number text-wrap" type="text" id="account-number"
                value="0000 0000 0000 0000 0000" readonly>
-        <div class="mb-5">
+        <div class="mb-2">
           <label for="transfer-title" class="mb-2">Tytuł przelewu:</label>
           <input type="text" class="form-control" id="transfer-title" value="Tytuł przelewu" readonly>
         </div>
-        <input type="text" class="form-control" id="amount" value="Ilość osób" readonly>
+        <div class="mb-2">
+          <label for="amount" class="mb-2">Łączna kwota:</label>
+          <input type="text" class="form-control" id="amount" value="Ilość osób" readonly>
+        </div>
         <div id="snackbar">Skopiowano!</div>
       </form>
     </div>
