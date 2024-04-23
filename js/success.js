@@ -21,13 +21,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
   function showToast() {
     snackbar.style.display = 'block';
+    snackbar.className = "show";
     setTimeout(function () {
       snackbar.style.display = 'none';
     }, 1500);
-    snackbar.className = "show";
+    // snackbar.className = "show";
 
     // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+    // setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
   }
 
   receiver.addEventListener('click', function() {
