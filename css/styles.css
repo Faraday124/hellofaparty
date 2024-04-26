@@ -13468,7 +13468,8 @@ body {
   }
 }
 
-#terms-conditions-checkbox {
+#terms-conditions-checkbox,
+#rodo-checkbox {
   height: auto;
   width: auto;
   justify-content: center;
@@ -13489,7 +13490,18 @@ body {
 }
 
 .terms-conditions {
-  max-width: 800px;
+  width: 100%;
   padding: 4rem;
   flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+  box-shadow: 5px 10px #000;
+  font-size: 25px;
+}
+
+@media (min-width: 992px) {
+  .terms-conditions {
+    max-width: 800px;
+    font-size: 16px;
+  }
 }
