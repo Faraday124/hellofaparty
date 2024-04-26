@@ -13453,12 +13453,18 @@ body {
 }
 
 .success-form {
-  width: 600px;
+  width: 800px;
 }
 
 .success-form input {
   padding: 20px;
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .success-form {
+    width: 600px;
+  }
 }
 
 @media (min-width: 992px) {
