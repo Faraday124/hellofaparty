@@ -9,8 +9,16 @@ window.addEventListener('DOMContentLoaded', event => {
   $("#buy-ticket-form").on("click", ".add-btn", function () {
     // Your click event handler code here
 
+    const formData = new FormData(document.getElementById('buy-ticket-form'));
+    const newId = Array.from(formData.keys()).length;
+
     var newRow = $('#guest-template .row').clone();
-    console.log(newRow);
+
+    newRow.attr("id", "guest-template-" + newId);
+
+    var newInput = newRow.find('#another-guest');
+
+    newInput.attr("name", "guest-" + newId);
 
     $("#buy-ticket-form fieldset.guest:last-of-type").after(newRow);
 
