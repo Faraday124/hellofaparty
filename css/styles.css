@@ -13487,6 +13487,8 @@ body {
   display: flex;
   align-items: center;
   font-size: 30px;
+  z-index: 2;
+  position: relative;
 }
 
 @media (min-width: 992px) {
