@@ -12675,7 +12675,7 @@ body {
   height: 100dvh;
   min-height: 35rem;
   padding-top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/beerpong.webp");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/coming_soon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
