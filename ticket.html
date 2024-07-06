@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Hell of a party - Ticket</title>
   <link rel="icon" type="image/sx-icon" href="assets/favicon-v2.ico"/>
   <link href="css/styles.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="masthead overflow-y-scroll">
+<header class="masthead">
   <div id="spinner-overlay" style="display: none;"></div>
   <div id="spinner" style="display: none;">
     <img src="assets/img/logo.png" alt="Loading spinner">
@@ -21,7 +21,7 @@
         action="https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec"
         method="post"
       >
-        <h1>Lista obecności</h1>
+        <h1 class="guest-list-title">Lista obecności</h1>
         <div class="mb-2">
           <input class="form-control guest-name" name="name" type="text" placeholder="Imię i nazwisko" required>
         </div>
