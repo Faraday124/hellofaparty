@@ -9,7 +9,7 @@
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="masthead">
+<header class="masthead ticket-background-override">
   <div id="spinner-overlay" style="display: none;"></div>
   <div id="spinner" style="display: none;">
     <img src="assets/img/logo.png" alt="Loading spinner">
@@ -28,7 +28,9 @@
         </div>
         <fieldset class="row mb-2 g-2 guest" name="guest1">
           <div class="input-group">
-            <button class="btn btn-success add-btn" type="button"><i class="fa fa-solid fa-lg fa-plus"></i></button>
+            <button class="btn btn-success add-btn" type="button">
+              <i class="fa fa-solid fa-lg fa-plus mb-5"></i>
+            </button>
             <input class="form-control guest-name text-wrap" name="guest1" type="text"
                    placeholder="Twoja ekipa&#10; (za kogo płacisz)">
           </div>
@@ -49,13 +51,14 @@
             Akceptuję <a href="rodo.html" class="text-white-50 text-decoration-none">regulamin RODO</a>
           </label>
         </div>
-        <button type="submit" id="buy-ticket-btn" class="ticket-form-btn text-uppercase mt-3"> Prześlij i przejdź do przelewu
+        <button type="submit" id="buy-ticket-btn" class="ticket-form-btn text-uppercase mt-3"> Prześlij i przejdź do
+          przelewu
         </button>
         <!--        <div class="d-flex justify-content-end mt-3">-->
         <!--          <img src="assets/img/price.png" alt="Price" class="price">-->
         <!--        </div>-->
       </form>
-      <div class="text-uppercase mt-5 justify-content-start">19 lipca 2024</div>
+      <div class="text-uppercase mt-5 justify-content-start ms-2">19 lipca 2024</div>
       <div class="text-uppercase d-flex justify-content-around">
         <div>pałacyk wiskotta</div>
         <div>60 PLN</div>
