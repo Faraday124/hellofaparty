@@ -5,6 +5,11 @@
   src: url('../assets/font/dynamo2.woff2');
 }
 
+@font-face {
+  font-family: "League Spartan";
+  src: url('../assets/font/league-spartan.ttf');
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -253,8 +258,8 @@ a {
 }
 
 a:hover {
-  /*color: var(--bs-link-hover-color);*/
-  font-weight: bolder;
+  color: var(--bs-link-hover-color) !important;
+  /*font-weight: bold;*/
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -12679,7 +12684,7 @@ body {
   height: 100vh;
   min-height: 35rem;
   padding-top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/gepard_background_mobile.webp");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-background-mobile.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12689,11 +12694,14 @@ body {
 }
 
 .masthead h1, .masthead .h1 {
-  color: rgb(255, 218, 252);
+  /*color: rgb(255, 218, 252); JUNGLE*/
   text-transform: uppercase;
-  font-family: "Dynamo";
-  filter: drop-shadow(0em 0em 0.01940645em rgba(255, 21, 239, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(255, 63, 242, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(255, 63, 242, 0.440000));
-  font-size: 2.5rem;
+  font-family: "League Spartan";
+  /*filter: drop-shadow(0em 0em 0.01940645em rgba(255, 21, 239, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(255, 63, 242, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(255, 63, 242, 0.440000));*/
+  filter: drop-shadow(0px 0px 1.70777px rgba(26, 30, 116, 0.95)) drop-shadow(0px 0px 8.53884px rgba(54, 57, 119, 0.75)) drop-shadow(0px 0px 25.6165px rgba(54, 57, 116, 0.44));
+  text-shadow: -0.03625em 0em 0em rgba(0, 255, 255, 1.000000), 0.03625em 0em 0em rgba(255, 0, 0, 1.000000);
+  color: white;
+  font-size: 4.5rem;
   line-height: 2.5rem;
   opacity: 0.9;
   font-weight: 700;
@@ -12905,9 +12913,8 @@ body {
 }
 
 .title-container {
-  margin-top: 160px;
+  margin-top: 400px;
   z-index: 2;
-  text-align: center;
 }
 
 @media (min-width: 554px) {
@@ -12923,13 +12930,19 @@ body {
   z-index: 10;
 }
 
+.buy-ticket-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+
 .buy-ticket-btn {
   text-decoration: none;
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, 0.8);
   border-radius: 30px;
-  padding: 15px 100px;
+  padding: 10px 40px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 @media (min-width: 554px) {
@@ -12943,17 +12956,18 @@ body {
 }
 
 .buy-ticket-text {
-  color: white;
-  font-family: "Dynamo";
+  color: dimgrey;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 20px;
-  filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));
+  font-size: 14px;
+  /*filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));*/
 }
 
 @media (min-width: 554px) {
   .buy-ticket-text {
-    filter: drop-shadow(0em 0em 0.01940645em rgba(26, 30, 116, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(54, 57, 116, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(54, 57, 116, 0.440000));
-    color: rgb(219, 220, 240);
+    /*filter: drop-shadow(0em 0em 0.01940645em rgba(26, 30, 116, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(54, 57, 116, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(54, 57, 116, 0.440000));*/
+    color: dimgrey;
     font-weight: 700;
   }
 }
@@ -13079,6 +13093,13 @@ body {
   .cheerleader-mobile {
     display: none;
   }
+}
+
+.hop-logo {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 50%;
 }
 
 .hop-video {
