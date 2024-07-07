@@ -1,4 +1,4 @@
-const PRICE = 100;
+const PRICE = 60;
 
 window.addEventListener('DOMContentLoaded', event => {
   "use strict";

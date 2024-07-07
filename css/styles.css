@@ -12717,7 +12717,7 @@ body {
 @media (min-width: 554px) {
   .masthead {
     background-attachment: fixed;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/tiger_background_blue.webp");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12743,8 +12743,8 @@ body {
   }
 
   .masthead h1, .masthead .h1 {
-    font-size: 3.5rem;
-    line-height: 5rem;
+    font-size: 4.5rem;
+    line-height: 4rem;
   }
 
   .masthead h2, .masthead .h2 {
@@ -12921,7 +12921,10 @@ body {
 
 @media (min-width: 554px) {
   .title-container {
-    margin-top: 160px;
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -12951,9 +12954,14 @@ body {
   .buy-ticket-btn {
     position: static;
     transform: none;
-    background-color: rgb(37, 16, 59);
+    /*background-color: rgb(37, 16, 59);*/
+    background-color: #5ce1e6;
+    opacity: 0.6;
+    color: white;
     text-transform: uppercase;
     filter: drop-shadow(0em 0em 0.09940645em rgb(37, 16, 59, 0.9));
+    padding: 10px 150px;
+    margin-top: 5px;
   }
 }
 
@@ -12974,17 +12982,34 @@ body {
   }
 }
 
+
+.subtitle-mobile {
+  display: block;
+  /*text-transform: uppercase;*/
+  /*font-family: "Dynamo";*/
+  /*filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));*/
+  /*color: white;*/
+  /*font-size: 1.4rem;*/
+
+}
+
+@media (min-width: 554px) {
+  .subtitle-mobile {
+    display: none;
+    /*font-size: 2.5rem;*/
+  }
+}
+
 .subtitle {
-  text-transform: uppercase;
-  font-family: "Dynamo";
-  filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));
-  color: white;
-  font-size: 1.4rem;
+  display: none;
 }
 
 @media (min-width: 554px) {
   .subtitle {
-    font-size: 2.5rem;
+    display: block;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    margin-bottom: 0;
   }
 }
 
@@ -13102,6 +13127,18 @@ body {
   top: 80px;
   right: 10px;
   width: 50%;
+}
+
+@media (min-width: 554px) {
+  .hop-logo {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+
+
+  }
 }
 
 .hop-video {
@@ -13228,6 +13265,12 @@ body {
   background-color: rgba(160, 201, 192, 0.84);
 }
 
+@media (min-width: 554px) {
+  .add-btn {
+    height: 52px;
+  }
+}
+
 .remove-btn {
   background-color: #f15152;
   color: #fff;
@@ -13243,6 +13286,12 @@ body {
 .remove-btn:hover {
   background-color: #bd0f0f;
   color: #fff;
+}
+
+@media (min-width: 554px) {
+  .remove-btn {
+    height: 52px;
+  }
 }
 
 .ticket-container input {
@@ -13373,7 +13422,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  /*background-color: rgba(255, 255, 255, 0.5);*/
   backdrop-filter: blur(5px);
   transition: background-color 1s, backdrop-filter 0.5s;
   z-index: 9998;
@@ -13499,8 +13548,14 @@ body {
 }
 
 .success-form input {
-  padding: 20px;
+  padding: 16px;
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .success-form input {
+    padding: 12px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -13565,4 +13620,10 @@ body {
 
 .ticket-background-override {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-ticket-mobile-background.webp");
+}
+
+@media (min-width: 554px) {
+  .ticket-background-override {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-background.webp");
+  }
 }
