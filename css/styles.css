@@ -2554,8 +2554,10 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-  background-color: #54314e;
-  border-color: #54314e;
+  /*background-color: #54314e;*/
+  background-color: rgba(160, 201, 192, 0.84);
+  border-color: rgba(160, 201, 192, 0.84);
+  /*border-color: #54314e;*/
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -13222,7 +13224,8 @@ body {
 }
 
 .add-btn:hover {
-  background-color: #4b7a71;
+  /*background-color: #4b7a71;*/
+  background-color: rgba(160, 201, 192, 0.84);
 }
 
 .remove-btn {
