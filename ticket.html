@@ -24,15 +24,16 @@
         method="post"
       >
         <div class="mb-2">
-          <input class="form-control guest-name" name="name" type="text" placeholder="Imię i nazwisko" required>
+          <input class="form-control guest-name justify-content-start" name="name" type="text"
+                 placeholder="Imię i nazwisko" required>
         </div>
         <fieldset class="row mb-2 g-2 guest" name="guest1">
           <div class="input-group">
             <button class="btn btn-success add-btn" type="button">
-              <i class="fa fa-solid fa-lg fa-plus mb-5"></i>
+              <i class="fa fa-solid fa-lg fa-plus ps-2"></i>
             </button>
             <input class="form-control guest-name text-wrap" name="guest1" type="text"
-                   placeholder="Twoja ekipa&#10; (za kogo płacisz)">
+                   placeholder="Twoja ekipa&#10; (jeśli za kogoś płacisz)">
           </div>
         </fieldset>
         <div class="mb-2">
@@ -67,7 +68,9 @@
     <div id="guest-template" style="display: none">
       <fieldset class="row mb-2 g-2 guest" name="another-guest-template">
         <div class="input-group">
-          <button class="btn btn-success remove-btn" type="button"><i class="fa fa-solid fa-lg fa-xmark"></i></button>
+          <button class="btn btn-success remove-btn" type="button">
+            <i class="fa fa-solid fa-lg fa-xmark ps-2"></i>
+          </button>
           <input class="form-control guest-name" id="another-guest" name="guest4-name" type="text"
                  placeholder="Imię i nazwisko">
         </div>
