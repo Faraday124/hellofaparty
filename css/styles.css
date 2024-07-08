@@ -13476,20 +13476,19 @@ body {
 }
 
 #snackbar {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
   background: linear-gradient(135deg, #66bb6a, #43a047);
   color: #fff;
   border-radius: 100px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Centered text */
-  padding: 16px; /* Padding */
-  position: absolute; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 50%; /* Center the snackbar */
-  margin-top: 20px;
-  /*bottom: 30px; !* 30px from the bottom *!*/
+  text-align: center;
+  padding: 16px;
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  bottom: 15rem;
 }
 
 #snackbar.show {
