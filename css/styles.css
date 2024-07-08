@@ -13628,3 +13628,10 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-background.webp");
   }
 }
+
+@media (min-width: 554px) {
+  .text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
