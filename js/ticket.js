@@ -43,7 +43,8 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     const price = (1 + guests.length) * PRICE;
-    const title = formData.get('name') + ' - HOP';
+    const friends = guests.length > 0 ? ' i ekipa' : '';
+    const title = formData.get('name') + friends +' - HOP';
 
     formData.append('price', price.toString());
     formData.append('transferTitle', title);
