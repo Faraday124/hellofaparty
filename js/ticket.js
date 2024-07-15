@@ -3,9 +3,12 @@ window.addEventListener('DOMContentLoaded', event => {
   "use strict";
   $('#promo-code').on('input', function () {
     const promoCode = "V0UgV1JP"
+    const promoCode2 = "QUtDSkE=";
+
     const inputValue = $(this).val();
-    console.log(inputValue);
-    if (promoCode === btoa(inputValue)) {
+    const inputValueEncoded = btoa(inputValue);
+
+    if (promoCode === inputValueEncoded || promoCode2 === inputValueEncoded) {
       $(this).removeClass('invalid-promo-code');
       $(this).addClass('valid-promo-code');
       PRICE = 50;
