@@ -1,7 +1,25 @@
-const PRICE = 60;
-
+let PRICE = 60;
 window.addEventListener('DOMContentLoaded', event => {
   "use strict";
+  $('#promo-code').on('input', function () {
+    const promoCode = "V0UgV1JP"
+    const inputValue = $(this).val();
+    console.log(inputValue);
+    if (promoCode === btoa(inputValue)) {
+      $(this).removeClass('invalid-promo-code');
+      $(this).addClass('valid-promo-code');
+      PRICE = 50;
+      $('#price').text(PRICE + ' PLN').addClass('valid-promo-code-price');
+    } else {
+      PRICE = 60;
+      $(this).removeClass('valid-promo-code');
+      $('#price').text(PRICE + ' PLN').removeClass('valid-promo-code-price');
+      if (inputValue.length > 0) {
+        $(this).addClass('invalid-promo-code');
+      }
+    }
+  });
+
   $("#buy-ticket-form").on("click", ".remove-btn", function () {
     $(this).closest("fieldset.guest").remove();
   });
@@ -44,7 +62,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     const price = (1 + guests.length) * PRICE;
     const friends = guests.length > 0 ? ' i ekipa' : '';
-    const title = formData.get('name') + friends +' - HOP';
+    const title = formData.get('name') + friends + ' - HOP';
 
     formData.append('price', price.toString());
     formData.append('transferTitle', title);

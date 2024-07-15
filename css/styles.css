@@ -13635,3 +13635,17 @@ body {
     text-justify: inter-word;
   }
 }
+
+.valid-promo-code, .valid-promo-code:focus{
+  border-color: #4BB543;
+  box-shadow: 5px 5px 10px #4BB543;
+}
+
+.invalid-promo-code, .invalid-promo-code:focus{
+  border-color: #ff3333;
+  box-shadow: 5px 5px 10px #ff3333;
+}
+
+.valid-promo-code-price {
+color: #4BB543;
+}
