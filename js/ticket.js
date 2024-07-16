@@ -2,13 +2,17 @@ let PRICE = 60;
 window.addEventListener('DOMContentLoaded', event => {
   "use strict";
   $('#promo-code').on('input', function () {
-    const promoCode = "V0UgV1JP"
+    const promoCode = "V0UgV1JP";
     const promoCode2 = "QUtDSkE=";
+    const promoCode3 = "V0xO";
 
     const inputValue = $(this).val();
     const inputValueEncoded = btoa(inputValue);
 
-    if (promoCode === inputValueEncoded || promoCode2 === inputValueEncoded) {
+    if (promoCode === inputValueEncoded ||
+      promoCode2 === inputValueEncoded ||
+      promoCode3 === inputValueEncoded
+    ) {
       $(this).removeClass('invalid-promo-code');
       $(this).addClass('valid-promo-code');
       PRICE = 50;
@@ -66,10 +70,12 @@ window.addEventListener('DOMContentLoaded', event => {
     const price = (1 + guests.length) * PRICE;
     const friends = guests.length > 0 ? ' i ekipa' : '';
     const title = formData.get('name') + friends + ' - HOP';
+    const promoCode = formData.get('promo-code');
 
     formData.append('price', price.toString());
     formData.append('transferTitle', title);
     formData.append('guests', JSON.stringify(guests));
+    formData.append('promoCode', promoCode);
 
     // Perform asynchronous form submission
     fetch('https://script.google.com/macros/s/AKfycbyvFmI6Vj7N9ClqCJd6NVYTLw1zluYTfUu-ZCIvz6h6PUWyj6wNJudRTvoCq_2tQZQDiA/exec', {
