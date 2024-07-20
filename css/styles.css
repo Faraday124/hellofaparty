@@ -258,8 +258,8 @@ a {
 }
 
 a:hover {
-  color: var(--bs-link-hover-color) !important;
-  /*font-weight: bold;*/
+  /*color: var(--bs-link-hover-color);*/
+  font-weight: bolder;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2554,10 +2554,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-  /*background-color: #54314e;*/
-  background-color: rgba(160, 201, 192, 0.84);
-  border-color: rgba(160, 201, 192, 0.84);
-  /*border-color: #54314e;*/
+  background-color: #54314e;
+  border-color: #54314e;
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -12686,7 +12684,7 @@ body {
   height: 100vh;
   min-height: 35rem;
   padding-top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-background-mobile.webp");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/jungle/gepard_background_mobile.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12696,30 +12694,25 @@ body {
 }
 
 .masthead h1, .masthead .h1 {
-  /*color: rgb(255, 218, 252); JUNGLE*/
+  color: rgb(255, 218, 252);
   text-transform: uppercase;
-  font-family: "League Spartan";
-  /*filter: drop-shadow(0em 0em 0.01940645em rgba(255, 21, 239, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(255, 63, 242, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(255, 63, 242, 0.440000));*/
-  filter: drop-shadow(0px 0px 1.70777px rgba(26, 30, 116, 0.95)) drop-shadow(0px 0px 8.53884px rgba(54, 57, 119, 0.75)) drop-shadow(0px 0px 25.6165px rgba(54, 57, 116, 0.44));
-  text-shadow: -0.03625em 0em 0em rgba(0, 255, 255, 1.000000), 0.03625em 0em 0em rgba(255, 0, 0, 1.000000);
-  color: white;
-  font-size: 4rem;
-  line-height: 3.5rem;
+  font-family: "Dynamo";
+  filter: drop-shadow(0em 0em 0.01940645em rgba(255, 21, 239, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(255, 63, 242, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(255, 63, 242, 0.440000));
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   opacity: 0.9;
   font-weight: 700;
 }
 
 .masthead h2, .masthead .h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  max-width: 20rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 554px) {
   .masthead {
     background-attachment: fixed;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/dobre-techno/dobre-techno-background.webp");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url("../assets/img/jungle/tiger_background_blue.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12745,8 +12738,8 @@ body {
   }
 
   .masthead h1, .masthead .h1 {
-    font-size: 4.5rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
+    line-height: 5rem;
   }
 
   .masthead h2, .masthead .h2 {
@@ -12917,19 +12910,16 @@ body {
 }
 
 .title-container {
-  margin-top: 300px;
+  margin-top: 160px;
   z-index: 2;
+  text-align: center;
 }
 
 @media (min-width: 554px) {
   .title-container {
-    margin-top: 100px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 160px;
   }
 }
-
 
 #buy-ticket {
   border: none;
@@ -12937,19 +12927,18 @@ body {
   z-index: 10;
 }
 
-.buy-ticket-btn-container {
-  display: flex;
-  justify-content: center;
-}
-
-
 .buy-ticket-btn {
   text-decoration: none;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.3);
   border-radius: 30px;
-  padding: 10px 40px;
+  padding: 15px 100px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.buy-ticket-btn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
 }
 
 @media (min-width: 554px) {
@@ -12957,61 +12946,38 @@ body {
     position: static;
     transform: none;
     /*background-color: rgb(37, 16, 59);*/
-    background-color: #5ce1e6;
-    opacity: 0.6;
-    color: white;
     text-transform: uppercase;
-    filter: drop-shadow(0em 0em 0.09940645em rgb(37, 16, 59, 0.9));
-    padding: 10px 150px;
-    margin-top: 5px;
+    /*filter: drop-shadow(0em 0em 0.09940645em rgb(37, 16, 59, 0.9));*/
   }
 }
 
 .buy-ticket-text {
-  color: dimgrey;
+  color: white;
   font-family: "Helvetica Neue";
-  font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
-  /*filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));*/
+  font-size: 15px;
+  filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));
 }
 
 @media (min-width: 554px) {
   .buy-ticket-text {
     /*filter: drop-shadow(0em 0em 0.01940645em rgba(26, 30, 116, 0.950000)) drop-shadow(0em 0em 0.09703225em rgba(54, 57, 116, 0.750000)) drop-shadow(0em 0em 0.29109675em rgba(54, 57, 116, 0.440000));*/
-    color: dimgrey;
-    font-weight: 700;
-  }
-}
-
-
-.subtitle-mobile {
-  display: block;
-  /*text-transform: uppercase;*/
-  /*font-family: "Dynamo";*/
-  /*filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));*/
-  /*color: white;*/
-  /*font-size: 1.4rem;*/
-
-}
-
-@media (min-width: 554px) {
-  .subtitle-mobile {
-    display: none;
-    /*font-size: 2.5rem;*/
+    /*color: rgb(219, 220, 240);*/
+    /*font-weight: 700;*/
   }
 }
 
 .subtitle {
-  display: none;
+  text-transform: uppercase;
+  font-family: "Dynamo";
+  filter: drop-shadow(0em 0em 0.24796875em rgba(255, 255, 255, 0.440000));
+  color: white;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 554px) {
   .subtitle {
-    display: block;
-    letter-spacing: 0.3rem;
-    font-weight: bold;
-    margin-bottom: 0;
+    font-size: 2.5rem;
   }
 }
 
@@ -13124,25 +13090,6 @@ body {
   }
 }
 
-.hop-logo {
-  position: absolute;
-  top: 80px;
-  right: 10px;
-  width: 50%;
-}
-
-@media (min-width: 554px) {
-  .hop-logo {
-    position: relative;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: end;
-
-
-  }
-}
-
 .hop-video {
   object-fit: cover;
   position: absolute;
@@ -13246,9 +13193,10 @@ body {
 
 .ticket-container {
   width: 100%;
-  padding: 3rem;
+  padding: 2.5rem;
   flex-direction: column;
 }
+
 
 .add-btn {
   background-color: #fff;
@@ -13388,18 +13336,20 @@ body {
 
 .ticket-form-btn {
   width: 100%;
-  background-size: cover;
-  opacity: 0.6;
   border: none;
   position: relative;
   z-index: 10;
   border-radius: 100px;
   color: white;
   font-weight: bold;
-  background: linear-gradient(to bottom, rgba(160, 201, 192, 0.84), rgba(108, 169, 155, 0.6));
+  background-color: rgb(255, 255, 255, 0.3);
   padding: 15px;
-  font-size: 12px;
 }
+
+.ticket-form-btn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
 
 @media (min-width: 992px) {
   .ticket-form-btn {
@@ -13565,13 +13515,6 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  .ticket-container h1 {
-    font-size: 30px;
-  !important;
-  }
-}
-
 #terms-conditions-checkbox,
 #rodo-checkbox {
   height: auto;
@@ -13615,7 +13558,21 @@ body {
 
 .ticket-container {
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+  .buy-ticket-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 554px) {
+  .ticket-container {
+    h1 {
+      font-size: 4rem;
+    }
+    .buy-ticket-text {
+      font-size: 15px;
+    }
   }
 }
 

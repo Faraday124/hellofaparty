@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hell of a party</title>
+  <link rel="icon" type="image/sx-icon" href="assets/favicon-v2.ico"/>
+</head>
+<body>
+<div>Hello World</div>
+
+<button class="btn here" type="button" id="click-me">
+  Click me
+</button>
+
+<button class="btn here" type="button" id="click-me2">
+  Click me2
+</button>
+<script>
+  const element = document.getElementById("click-me");
+  const element2 = document.getElementById("click-me2");
+  element.addEventListener("click", async function (event) {
+      event.preventDefault();
+
+      try {
+        const response = await fetch('http://127.0.0.1:80/users', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({"username": "xyz"})
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          alert('User created successfully!');
+          console.log(result);
+        } else {
+          const error = await response.text();
+          alert('Error creating user: ' + error);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error creating user: ' + error.message);
+      }
+    }
+
+  );
+
+  element2.addEventListener("click", async function (event) {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('http://127.0.0.1:80', {
+        method: 'GET'
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert('Success!');
+        console.log(result);
+      } else {
+        const error = await response.text();
+        alert('Error ' + error);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error: ' + error.message);
+    }
+    });
+
+</script>
+</body>
+</html>

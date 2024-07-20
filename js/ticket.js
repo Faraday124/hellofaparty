@@ -1,24 +1,29 @@
-let PRICE = 60;
+const DEFAULT_PRICE = 99;
+const PROMO_PRICE = 89;
+let PRICE = DEFAULT_PRICE;
+
 window.addEventListener('DOMContentLoaded', event => {
   "use strict";
   $('#promo-code').on('input', function () {
     const promoCode = "V0UgV1JP";
     const promoCode2 = "QUtDSkE=";
     const promoCode3 = "V0xO";
+    const promoCode4 = "UUJT";
+
+    const promoCodes = [promoCode, promoCode2, promoCode3, promoCode4];
 
     const inputValue = $(this).val();
     const inputValueEncoded = btoa(inputValue);
 
-    if (promoCode === inputValueEncoded ||
-      promoCode2 === inputValueEncoded ||
-      promoCode3 === inputValueEncoded
-    ) {
+    const isCorrectPromoCode = promoCodes.includes(inputValueEncoded);
+
+    if (isCorrectPromoCode) {
       $(this).removeClass('invalid-promo-code');
       $(this).addClass('valid-promo-code');
-      PRICE = 50;
+      PRICE = PROMO_PRICE;
       $('#price').text(PRICE + ' PLN').addClass('valid-promo-code-price');
     } else {
-      PRICE = 60;
+      PRICE = DEFAULT_PRICE;
       $(this).removeClass('valid-promo-code');
       $('#price').text(PRICE + ' PLN').removeClass('valid-promo-code-price');
       if (inputValue.length > 0) {
